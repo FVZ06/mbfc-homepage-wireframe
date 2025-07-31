@@ -8,31 +8,105 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <ul>
+      <li><a href="#">Ad-Free Signup</a></li>
+      <li><a href="#">Gift</a></li>
+      <li><a href="#">Donate</a></li>
+      <li><a href="#">API</a></li>
+      <li><a href="#">Log In</a></li>
+    </ul>
+  </div>
+
+  <!-- Main navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li class="dropdown">
+        <a href="#">Bias Categories ▾</a>
+        <ul class="submenu">
+          <li><a href="#">Least Biased</a></li>
+          <li><a href="#">Left</a></li>
+          <li><a href="#">Left-Center</a></li>
+          <li><a href="#">Center</a></li>
+          <li><a href="#">Right-Center</a></li>
+          <li><a href="#">Right</a></li>
+          <li><a href="#">Conspiracy-Pseudoscience</a></li>
+          <li><a href="#">Questionable Sources</a></li>
+          <li><a href="#">Pro-Science</a></li>
+          <li><a href="#">Satire</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Genres</a></li>
+      <li class="dropdown">
+        <a href="#">Transparency ▾</a>
+        <ul class="submenu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Funding</a></li>
+          <li><a href="#">Methodology</a></li>
+          <li><a href="#">Data &amp; Stats</a></li>
+          <li><a href="#">Corrections Policy</a></li>
+          <li><a href="#">Changes/Corrections</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">News ▾</a>
+        <ul class="submenu">
+          <li><a href="#">Factual News</a></li>
+          <li><a href="#">Fact vs Fiction</a></li>
+          <li><a href="#">Political News</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Search ▾</a>
+        <ul class="submenu">
+          <li><a href="#">All Search Options</a></li>
+          <li><a href="#">Filtered Search</a></li>
+          <li><a href="#">Fact Check Search</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Countries</a></li>
+      <li><a href="#">Profiles</a></li>
+      <li><a href="#">Educator Resources</a></li>
+      <li><a href="#">Maps &amp; Charts</a></li>
+      <li class="dropdown">
+        <a href="#">More ▾</a>
+        <ul class="submenu">
+          <li><a href="#">Extensions</a></li>
+          <li><a href="#">Re-Evaluated Sources</a></li>
+          <li><a href="#">Submit Source</a></li>
+          <li><a href="#">Pseudoscience Dictionary</a></li>
+          <li><a href="#">Membership Questions</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header title and search -->
   <header class="site-header">
     <h1>Media Bias / Fact Check</h1>
-    <p class="tagline">Know the Bias. Trust the Facts.</p>
     <form class="search-bar">
-      <input type="text" placeholder="Search by outlet, topic, or bias..." />
+      <input type="text" placeholder="Search by name, URL, outlet, topic..." />
     </form>
   </header>
 
-  <main>
-    <section class="browse-bias">
-      <h2>Browse by Bias</h2>
-      <ul class="bias-list">
-        <li><a href="#">Left</a></li>
-        <li><a href="#">Left-Center</a></li>
-        <li><a href="#">Center</a></li>
-        <li><a href="#">Right-Center</a></li>
-        <li><a href="#">Right</a></li>
-        <li><a href="#">Pro-Science</a></li>
-        <li><a href="#">Conspiracy</a></li>
-        <li><a href="#">Questionable</a></li>
-        <li><a href="#">Satire</a></li>
-      </ul>
-    </section>
+  <!-- Content area -->
+  <main class="browse-bias">
+    <h2>Browse by Bias</h2>
+    <ul class="bias-list">
+      <li><a href="#">Left</a></li>
+      <li><a href="#">Left-Center</a></li>
+      <li><a href="#">Center</a></li>
+      <li><a href="#">Right-Center</a></li>
+      <li><a href="#">Right</a></li>
+      <li><a href="#">Pro-Science</a></li>
+      <li><a href="#">Conspiracy</a></li>
+      <li><a href="#">Questionable</a></li>
+      <li><a href="#">Satire</a></li>
+    </ul>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <p>© 2025 Media Bias Fact Check</p>
   </footer>
