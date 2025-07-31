@@ -9,6 +9,20 @@
   color: #666;
   margin-bottom: 24px;
 }
+.top-nav {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.top-nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+}
+.top-nav a:hover {
+  text-decoration: underline;
+}
 
 .bias-section {
   background: #fff;
@@ -39,7 +53,23 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.bias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
 
 .bias-btn:hover {
   background-color: #900000;
+}
+.bias-section {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.resources-section {
+  background-color: #f0f4f8;
+  border-top: 1px solid #ccc;
 }
