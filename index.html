@@ -1,53 +1,40 @@
-<!-- index.html (Updated) -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media Bias Fact Check</title>
+  <title>Media Bias / Fact Check</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="#">MBFC</a>
-    </div>
-    <nav class="main-menu">
-      <button class="hamburger" aria-label="Menu">☰</button>
-      <ul class="nav-list">
-        <li><a href="#">Media Bias</a></li>
-        <li><a href="#">Find Sources</a></li>
-        <li><a href="#">Schools & Libraries</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Articles</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <h1>Media Bias / Fact Check</h1>
+    <p class="tagline">Know the Bias. Trust the Facts.</p>
+    <form class="search-bar">
+      <input type="text" placeholder="Search by outlet, topic, or bias..." />
+    </form>
   </header>
 
-  <section class="hero">
-    <h1>Media Bias Fact Check</h1>
-    <form class="search-bar">
-      <input type="text" placeholder="Search sources..." />
-    </form>
-  </section>
-
   <main>
-    <section class="featured-updates">
-      <h2>Featured Updates</h2>
-      <ul>
-        <li><a href="#">Recent Fact Checks</a></li>
-        <li><a href="#">Trending Sources</a></li>
-        <li><a href="#">Editorial Notes</a></li>
+    <section class="browse-bias">
+      <h2>Browse by Bias</h2>
+      <ul class="bias-list">
+        <li><a href="#">Left</a></li>
+        <li><a href="#">Left-Center</a></li>
+        <li><a href="#">Center</a></li>
+        <li><a href="#">Right-Center</a></li>
+        <li><a href="#">Right</a></li>
+        <li><a href="#">Pro-Science</a></li>
+        <li><a href="#">Conspiracy</a></li>
+        <li><a href="#">Questionable</a></li>
+        <li><a href="#">Satire</a></li>
       </ul>
-    </section>
-
-    <section class="action-buttons">
-      <button>Donate</button>
-      <button>Volunteer</button>
-      <button>Share</button>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>© 2025 Media Bias Fact Check</p>
   </footer>
+</body>
+</html>
