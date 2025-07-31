@@ -1,122 +1,157 @@
-**index.html**
-```html
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Media Bias / Fact Check</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Bias Fact Check</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="site-header">
-  <div class="header-inner">
-    <div class="logo">Media Bias / Fact Check</div>
-    
-    <!-- Main Navigation -->
-    <nav class="main-nav">
+  <header>
+    <div class="logo">
+      <a href="#">MBFC</a>
+    </div>
+    <nav class="main-menu">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li class="has-dropdown">
-          <a href="#">Bias Categories ▾</a>
-          <ul class="dropdown">
-            <li><a href="/bias/least-biased/">Least Biased</a></li>
-            <li><a href="/bias/left/">Left</a></li>
-            <li><a href="/bias/left-center/">Left-Center</a></li>
-            <li><a href="/bias/center/">Center</a></li>
-            <li><a href="/bias/right-center/">Right-Center</a></li>
-            <li><a href="/bias/right/">Right</a></li>
-            <li><a href="/bias/conspiracy/">Conspiracy</a></li>
-            <li><a href="/bias/satire/">Satire</a></li>
-            <li><a href="/bias/pro-science/">Pro-Science</a></li>
-            <li><a href="/bias/questionable/">Questionable</a></li>
-          </ul>
+        <li>
+          <a href="#">Media Bias</a>
+          <div class="fat-menu">
+            <div class="menu-column">
+              <h4>Bias Categories</h4>
+              <ul>
+                <li><a href="#">Left</a></li>
+                <li><a href="#">Left-Center</a></li>
+                <li><a href="#">Center</a></li>
+                <li><a href="#">Right-Center</a></li>
+                <li><a href="#">Right</a></li>
+              </ul>
+            </div>
+            <div class="menu-column">
+              <h4>Details</h4>
+              <ul>
+                <li><a href="#">Source List</a></li>
+                <li><a href="#">Explanation of Bias</a></li>
+                <li><a href="#">Related Articles</a></li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li><a href="/transparency/">Transparency</a></li>
-        <li><a href="/news/">News</a></li>
-        <li><a href="/educators/">Educators</a></li>
-        <li><a href="/libraries/">Libraries</a></li>
-        <li class="has-dropdown">
-          <a href="#">More ▾</a>
-          <ul class="dropdown">
-            <li><a href="/countries/">Countries</a></li>
-            <li><a href="/politicians/">Politicians</a></li>
-            <li><a href="/maps-charts/">Maps & Charts</a></li>
-            <li><a href="/search/">Advanced Search</a></li>
-            <li><a href="/api/">API</a></li>
-            <li><a href="/membership/">Ad-Free Membership</a></li>
-            <li><a href="/donate/">Donate</a></li>
-            <li><a href="/gift/">Gift</a></li>
-            <li><a href="/extensions/">Browser Extensions</a></li>
-            <li><a href="/submit-source/">Submit Source</a></li>
-            <li><a href="/help-us/">Help Us Fact Check</a></li>
-            <li><a href="/membership-faq/">Membership FAQ</a></li>
-          </ul>
+        <li>
+          <a href="#">Find Sources</a>
+          <div class="fat-menu">
+            <div class="menu-column">
+              <h4>Search Tools</h4>
+              <ul>
+                <li><a href="#">Advanced Search</a></li>
+                <li><a href="#">Browse by Category</a></li>
+                <li><a href="#">Browse Alphabetically</a></li>
+              </ul>
+            </div>
+            <div class="menu-column">
+              <h4>Filters</h4>
+              <ul>
+                <li><a href="#">By Country</a></li>
+                <li><a href="#">By Topic</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">For Schools & Libraries</a>
+          <div class="fat-menu">
+            <div class="menu-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Printable Bias Charts</a></li>
+                <li><a href="#">Lesson Plans</a></li>
+                <li><a href="#">Citation Guidelines</a></li>
+              </ul>
+            </div>
+            <div class="menu-column">
+              <h4>Downloads</h4>
+              <ul>
+                <li><a href="#">PDFs</a></li>
+                <li><a href="#">Methodology Explained</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">About MBFC</a>
+          <div class="fat-menu">
+            <div class="menu-column">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#">Mission & History</a></li>
+                <li><a href="#">Meet the Team</a></li>
+                <li><a href="#">How We Rate</a></li>
+              </ul>
+            </div>
+            <div class="menu-column">
+              <h4>Info</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Articles</a>
+          <div class="fat-menu">
+            <div class="menu-column">
+              <h4>Sections</h4>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Editorials</a></li>
+                <li><a href="#">Updates</a></li>
+              </ul>
+            </div>
+            <div class="menu-column">
+              <h4>Media Mentions</h4>
+              <ul>
+                <li><a href="#">In the News</a></li>
+                <li><a href="#">Press Releases</a></li>
+              </ul>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
+  </header>
 
-    <!-- Search and Actions -->
-    <div class="header-actions">
-      <input type="search" class="search-input" placeholder="Search media sources…">
-      <a href="/api/" class="btn api">API</a>
-      <a href="/membership/" class="btn subscribe">Go Ad-Free</a>
-      <a href="/donate/" class="btn donate">Donate</a>
-      <button class="hamburger" aria-label="Toggle menu">☰</button>
-    </div>
-  </div>
-</header>
-
-<main>
-  <!-- Hero Section -->
   <section class="hero">
-    <h1>Know the Bias. Trust the Facts.</h1>
-  </section>
-
-  <!-- Browse by Bias Tags -->
-  <section class="browse-bias">
-    <h2>Browse by Bias</h2>
-    <div class="tags">
-      <a href="/bias/left/" class="tag">Left</a>
-      <a href="/bias/left-center/" class="tag">Left-Center</a>
-      <a href="/bias/center/" class="tag">Center</a>
-      <a href="/bias/right-center/" class="tag">Right-Center</a>
-      <a href="/bias/right/" class="tag">Right</a>
-      <a href="/bias/conspiracy/" class="tag">Conspiracy</a>
-      <a href="/bias/satire/" class="tag">Satire</a>
-      <a href="/bias/pro-science/" class="tag">Pro-Science</a>
-      <a href="/bias/questionable/" class="tag">Questionable</a>
+    <h1>Media Bias Fact Check</h1>
+    <form class="search-bar">
+      <input type="text" placeholder="Search sources..." />
+    </form>
+    <div class="quick-access">
+      <a href="#">Bias Ratings</a>
+      <a href="#">Charts</a>
+      <a href="#">FAQ</a>
     </div>
   </section>
 
-  <!-- CTA Cards -->
-  <section class="cards">
-    <div class="card">
-      <h3>For Educators & Librarians</h3>
-      <p>Printable charts, classroom guides, and media literacy kits.</p>
-      <a href="/educators/" class="btn outline">Browse Resources</a>
-    </div>
-    <div class="card">
-      <h3>Support Our Mission</h3>
-      <p>Keep MBFC independent and ad-free with donations or subscriptions.</p>
-      <a href="/donate/" class="btn donate">Donate</a>
-    </div>
-    <div class="card">
-      <h3>MBFC API</h3>
-      <p>Integrate our bias ratings into your apps—flexible API plans available.</p>
-      <a href="/api/" class="btn api">Explore API</a>
-    </div>
-  </section>
-</main>
+  <main>
+    <section class="featured-updates">
+      <h2>Featured Updates</h2>
+      <div class="updates-grid">
+        <div class="update-item"><a href="#">Recent Fact Checks</a></div>
+        <div class="update-item"><a href="#">Trending Sources</a></div>
+        <div class="update-item"><a href="#">Editorial Notes</a></div>
+      </div>
+    </section>
 
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p>&copy; 2025 Media Bias / Fact Check</p>
-    <nav>
-      <a href="/privacy/">Privacy</a> | <a href="/terms/">Terms</a> | <a href="/contact/">Contact</a>
-    </nav>
-  </div>
-</footer>
-```
+    <section class="action-buttons">
+      <button>Donate</button>
+      <button>Volunteer</button>
+      <button>Share MBFC</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Media Bias Fact Check</p>
+  </footer>
