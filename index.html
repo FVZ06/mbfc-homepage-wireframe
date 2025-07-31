@@ -1,9 +1,8 @@
-<!-- index.html -->
+<!-- index.html (Updated) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Bias Fact Check</title>
   <link rel="stylesheet" href="style.css">
@@ -14,71 +13,13 @@
       <a href="#">MBFC</a>
     </div>
     <nav class="main-menu">
-      <ul>
-        <li>
-          <details>
-            <summary>Media Bias</summary>
-            <ul class="submenu">
-              <li><a href="#">Left</a></li>
-              <li><a href="#">Left-Center</a></li>
-              <li><a href="#">Center</a></li>
-              <li><a href="#">Right-Center</a></li>
-              <li><a href="#">Right</a></li>
-              <li><a href="#">Source List</a></li>
-              <li><a href="#">Explanation of Bias</a></li>
-              <li><a href="#">Related Articles</a></li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Find Sources</summary>
-            <ul class="submenu">
-              <li><a href="#">Advanced Search</a></li>
-              <li><a href="#">Browse by Category</a></li>
-              <li><a href="#">Browse Alphabetically</a></li>
-              <li><a href="#">By Country</a></li>
-              <li><a href="#">By Topic</a></li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>For Schools & Libraries</summary>
-            <ul class="submenu">
-              <li><a href="#">Printable Bias Charts</a></li>
-              <li><a href="#">Lesson Plans</a></li>
-              <li><a href="#">Citation Guidelines</a></li>
-              <li><a href="#">PDFs</a></li>
-              <li><a href="#">Methodology Explained</a></li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>About MBFC</summary>
-            <ul class="submenu">
-              <li><a href="#">Mission & History</a></li>
-              <li><a href="#">Meet the Team</a></li>
-              <li><a href="#">How We Rate</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>Articles</summary>
-            <ul class="submenu">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Editorials</a></li>
-              <li><a href="#">Updates</a></li>
-              <li><a href="#">In the News</a></li>
-              <li><a href="#">Press Releases</a></li>
-            </ul>
-          </details>
-        </li>
+      <button class="hamburger" aria-label="Menu">☰</button>
+      <ul class="nav-list">
+        <li><a href="#">Media Bias</a></li>
+        <li><a href="#">Find Sources</a></li>
+        <li><a href="#">Schools & Libraries</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Articles</a></li>
       </ul>
     </nav>
   </header>
@@ -86,13 +27,8 @@
   <section class="hero">
     <h1>Media Bias Fact Check</h1>
     <form class="search-bar">
-      <input type="text" placeholder="Search Media Bias..." />
+      <input type="text" placeholder="Search sources..." />
     </form>
-    <div class="quick-access">
-      <a href="#">Bias Ratings</a>
-      <a href="#">Charts</a>
-      <a href="#">FAQ</a>
-    </div>
   </section>
 
   <main>
@@ -108,7 +44,7 @@
     <section class="action-buttons">
       <button>Donate</button>
       <button>Volunteer</button>
-      <button>Share MBFC</button>
+      <button>Share</button>
     </section>
   </main>
 
