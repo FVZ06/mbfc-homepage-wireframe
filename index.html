@@ -1,30 +1,41 @@
-<header>
-  <input type="text" placeholder="Search biases..." class="search-bar">
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBFC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">MBFC</a>
+      <form class="search-bar" role="search">
+        <input type="search" aria-label="Search" placeholder="Search outlet, bias, or topic..." />
+        <button type="submit">Go</button>
+      </form>
+    </div>
 
-<main>
-  <section class="bias-grid">
-    <button class="bias-btn">Left Bias</button>
-    <button class="bias-btn">Center</button>
-    <button class="bias-btn">Right Bias</button>
-  </section>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Ratings</a></li>
+        <li><a href="#">Educator Tools</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="categories">
-    <h2>Browse by Category</h2>
-    <ul>
-      <li><a href="#">Politics</a></li>
-      <li><a href="#">Economy</a></li>
-      <li><a href="#">Culture</a></li>
-    </ul>
-  </section>
+  <main class="site-content">
+    <section>
+      <h1>Welcome to MBFC</h1>
+      <p>Your trusted source for media bias ratings and news literacy tools.</p>
+    </section>
+  </main>
 
-  <section class="educators-tools">
-    <h2>For Educators & Analysts</h2>
-    <p>Downloadable guides, curriculum tools, and analytical frameworks.</p>
-    <a href="#" class="cta-btn">Explore Resources</a>
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2025 Bias Insights Project</p>
-</footer>
+  <footer class="site-footer">
+    <p>&copy; 2025 MBFC. All rights reserved.</p>
+  </footer>
+</body>
+</html>
