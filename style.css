@@ -1,145 +1,103 @@
-/* General Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", sans-serif;
-}
-
+/* Base Styles */
 body {
-  background-color: #f9f9f9;
-  color: #222;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
   line-height: 1.6;
-  padding: 1rem;
 }
 
 /* Header */
-.hero {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.tagline {
-  font-size: 1.1rem;
-  opacity: 0.85;
-  margin-bottom: 1rem;
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
 .search-bar {
-  padding: 0.6rem 1rem;
-  border-radius: 5px;
-  border: none;
-  font-size: 1rem;
-  width: 90%;
-  max-width: 400px;
-  margin: 0 auto;
-  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-/* Bias Categories */
-.bias-categories {
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.bias-categories h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-.button-grid {
+/* Bias Grid */
+.bias-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
   justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
 }
 
-.button-grid button {
-  background-color: #eaeaea;
+.bias-btn {
+  padding: 14px 22px;
+  font-size: 16px;
+  color: white;
+  background-color: red;
   border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.bias-btn:hover {
+  background-color: darkred;
   cursor: pointer;
-  font-weight: 500;
-  transition: background 0.2s;
 }
 
-.button-grid button:hover {
-  background-color: #ccc;
+/* Sections */
+section {
+  padding: 30px 20px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
-/* Educators Section */
-.educators {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  text-align: center;
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
 }
 
-.educators h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.btn-primary {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: #b30000;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+li {
+  margin: 8px 0;
 }
 
-.btn-primary:hover {
-  background-color: #800000;
-}
-
-/* Recent Updates */
-.updates {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-}
-
-.updates h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.updates ul {
-  list-style-type: none;
-  margin-bottom: 1rem;
-}
-
-.updates li {
-  margin: 0.5rem 0;
-}
-
-.updates a {
-  color: #0066cc;
+a {
+  color: #0077cc;
   text-decoration: none;
 }
 
-.updates a:hover {
+a:hover {
   text-decoration: underline;
+}
+
+/* CTA */
+.cta-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.cta-btn:hover {
+  background-color: #005fa3;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #f0f2f4;
   color: #666;
+  border-top: 1px solid #ddd;
 }
