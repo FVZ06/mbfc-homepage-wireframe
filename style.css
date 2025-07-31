@@ -1,75 +1,208 @@
-.main-title {
-  font-size: 36px;
-  font-weight: bold;
+/* General Reset */
+body {
   margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
 }
 
-.tagline {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 24px;
-}
+/* Top Navigation */
 .top-nav {
-  background-color: #333;
-  color: white;
+  background-color: #222;
   text-align: center;
-  padding: 10px;
+  padding: 0.8rem 0;
 }
+
 .top-nav a {
-  color: white;
-  margin: 0 12px;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
   text-decoration: none;
+  margin: 0 22px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+  display: inline-block;
+  padding: 6px 0;
 }
-.top-nav a:hover {
+
+.top-nav a:hover,
+.top-nav a:focus {
+  color: #c40000;
   text-decoration: underline;
 }
 
+/* Header */
+header {
+  text-align: center;
+  padding: 44px 10px 30px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  margin-bottom: 32px;
+}
+
+.main-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 28px;
+  letter-spacing: 0.2px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 560px;
+  padding: 16px;
+  font-size: 1.15rem;
+  border: 2px solid #c40000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline: none;
+  background: #f9f9f9;
+}
+
+.search-bar:focus {
+  border-color: #900000;
+  background: #fff;
+}
+
+/* Bias Section */
 .bias-section {
   background: #fff;
-  text-align: center;
-  padding: 40px 20px;
+  border-radius: 16px;
+  margin: 0 auto 34px auto;
+  max-width: 1200px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 40px 20px 32px;
 }
 
 .bias-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+  color: #1b1b1b;
+  font-weight: 700;
 }
 
 .bias-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 18px;
 }
 
+/* Bias Buttons */
 .bias-btn {
-  background-color: #c40000;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #e60000;
   color: white;
-  padding: 12px 24px;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(100,0,0,0.07);
+  transition: background 0.2s, transform 0.1s;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.bias-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  padding: 20px;
 }
 
-.bias-btn:hover {
-  background-color: #900000;
-}
-.bias-section {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
+.bias-btn:hover,
+.bias-btn:focus {
+  background-color: #c40000;
+  transform: translateY(-2px) scale(1.05);
 }
 
+/* Resources Section */
 .resources-section {
-  background-color: #f0f4f8;
-  border-top: 1px solid #ccc;
+  padding: 38px 18px 40px;
+  background: #f2f5f8;
+  max-width: 1200px;
+  margin: 0 auto 36px auto;
+  border-radius: 16px;
+  text-align: center;
 }
+
+.resources-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #1b1b1b;
+}
+
+.resources-section p {
+  font-size: 1.07rem;
+  margin-bottom: 22px;
+  color: #444;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 13px 30px;
+  background-color: #0577cc;
+  color: white;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  border: none;
+  box-shadow: 0 2px 8px rgba(5,119,204,0.09);
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  background-color: #015fa3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 24px 0 24px;
+  font-size: 1rem;
+  color: #777;
+  background: #e9ecef;
+  margin-top: 36px;
+  letter-spacing: 0.3px;
+  border-top: 1px solid #dadada;
+}
+
+/* Responsiveness */
+@media (max-width: 800px) {
+  .bias-grid {
+    gap: 12px;
+  }
+  .bias-btn {
+    font-size: 0.99rem;
+    padding: 12px 14px;
+  }
+  .resources-section,
+  .bias-section {
+    padding: 24px 8px 18px;
+    max-width: 98vw;
+  }
+  header {
+    padding: 30px 6px 18px;
+  }
+  .main-title { font-size: 1.6rem;}
+}
+
+@media (max-width: 500px) {
+  .top-nav a {
+    margin: 0 6px;
+    font-size: 1rem;
+    padding: 4px 0;
+  }
+  .main-title { font-size: 1.05rem;}
+  .search-bar { font-size: 1rem;}
+  .bias-grid { gap: 8px;}
+  .bias-btn { padding: 10px 4px; font-size: 0.92rem;}
+}
+
