@@ -1,143 +1,58 @@
-<!-- style.css -->
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
-  color: #333;
-  text-align: center;
-}
-
-header {
-  background: #003366;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.main-menu ul {
-  list-style: none;
-  margin-top: 10px;
-}
-
-.main-menu details {
-  margin: 8px 0;
-}
-
-.main-menu summary {
-  cursor: pointer;
-  padding: 10px;
-  background: #0055a5;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-.main-menu .submenu {
-  list-style: none;
-  padding-left: 20px;
-  margin-top: 5px;
-}
-
-.main-menu .submenu li {
-  margin: 6px 0;
-}
-
-.main-menu .submenu li a {
-  color: #0066cc;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-.hero {
-  background: #fafafa;
-  padding: 40px 20px;
-}
-
-.search-bar input {
-  width: 70%;
-  max-width: 600px;
-  padding: 12px;
-  font-size: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-}
-
-.quick-access {
-  margin-top: 20px;
-}
-
-.quick-access a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #003366;
-}
-
-.featured-updates {
-  background: #ffffff;
-  padding: 30px;
-  margin: 20px auto;
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.featured-updates ul {
-  list-style: none;
-}
-
-.featured-updates ul li {
-  margin: 10px 0;
-}
-
-.featured-updates ul li a {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.action-buttons {
-  margin: 30px 0;
-}
-
-.action-buttons button {
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: #0066cc;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-footer {
-  background-color: #e6ecf3;
-  padding: 15px 0;
-  font-size: 0.9rem;
-  color: #333;
-}
+<!-- style.css (Updated) -->
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f5f7fa; color: #333; text-align: center; }
+header { background: #003366; padding: 10px 20px; position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; }
+.logo a { color: #fff; font-size: 1.5rem; text-decoration: none; }
+.main-menu { position: relative; }
+.hamburger { background: transparent; border: none; color: #fff; font-size: 1.5rem; display: none; }
+.nav-list { display: flex; list-style: none; }
+.nav-list li { margin: 0 15px; }
+.nav-list li a { color: #fff; text-decoration: none; font-weight: bold; }
+.hero { background: #fafafa; padding: 40px 20px; }
+.search-bar input { width: 80%; max-width: 600px; padding: 12px; font-size: 1rem; border: 2px solid #ccc; border-radius: 8px; }
+.featured-updates { background: #fff; padding: 30px; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.featured-updates ul { list-style: none; display: flex; justify-content: space-around; }
+.featured-updates ul li a { color: #0066cc; text-decoration: none; font-weight: bold; }
+.action-buttons { margin: 30px 0; }
+.action-buttons button { padding: 10px 20px; margin: 0 10px; background-color: #0066cc; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+footer { background: #e6ecf3; padding: 15px 0; font-size: 0.9rem; }
 
 @media (max-width: 768px) {
-  .search-bar input {
-    width: 90%;
-  }
-  .featured-updates,
-  .action-buttons {
-    width: 90%;
-    margin: 20px auto;
-  }
+  .hamburger { display: block; }
+  .nav-list { display: none; flex-direction: column; background: #003366; position: absolute; top: 100%; left: 0; width: 100%; }
+  .nav-list li { margin: 10px 0; }
+  .featured-updates ul { flex-direction: column; }
 }
+
+/* ---------- Wireframe Version ---------- */
+
+<!-- wireframe.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe - MBFC</title>
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+  <header class="wf-header">Logo | ☰ Menu</header>
+  <section class="wf-hero">[Hero Image/Title Placeholder]</section>
+  <section class="wf-search">[Search Bar Placeholder]</section>
+  <section class="wf-nav">[Accordion/Menu Placeholder]</section>
+  <section class="wf-featured">[Featured Updates Placeholder]</section>
+  <section class="wf-actions">[Buttons Placeholder]</section>
+  <footer class="wf-footer">© MBFC</footer>
+</body>
+</html>
+
+/* wireframe.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; }
+header.wf-header { height: 60px; background: #ccc; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; }
+section.wf-hero { height: 200px; background: #eee; margin: 20px; }
+section.wf-search { height: 60px; background: #ddd; margin: 20px; }
+section.wf-nav { height: 150px; background: #eee; margin: 20px; }
+section.wf-featured { height: 120px; background: #ddd; margin: 20px; }
+section.wf-actions { height: 80px; background: #eee; margin: 20px; }
+footer.wf-footer { height: 40px; background: #ccc; display: flex; align-items: center; justify-content: center; }
