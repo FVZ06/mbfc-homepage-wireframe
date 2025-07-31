@@ -1,17 +1,41 @@
-<header>
-  <div class="header-wrap">
-    <a class="logo" href="/">MBFC</a>
-    <form class="search">
-      <input type="search" placeholder="Search outlet, bias, or topic...">
-      <button type="submit">Go</button>
-    </form>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBFC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">MBFC</a>
+      <form class="search-bar" role="search">
+        <input type="search" aria-label="Search" placeholder="Search outlet, bias, or topic..." />
+        <button type="submit">Go</button>
+      </form>
+    </div>
 
-  <nav class="main-nav">
-    <a href="/">Home</a>
-    <a href="#">Ratings</a>
-    <a href="#">Educator Tools</a>
-    <a href="#">News</a>
-    <a href="#">About</a>
-  </nav>
-</header>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Ratings</a></li>
+        <li><a href="#">Educator Tools</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-content">
+    <section>
+      <h1>Welcome to MBFC</h1>
+      <p>Your trusted source for media bias ratings and news literacy tools.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 MBFC. All rights reserved.</p>
+  </footer>
+</body>
+</html>
