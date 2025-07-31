@@ -14,7 +14,7 @@ body {
 
 header {
   background: #003366;
-  padding: 20px 0;
+  padding: 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -25,66 +25,40 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  margin-left: 20px;
 }
 
 .main-menu ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
   margin-top: 10px;
 }
 
-.main-menu ul li {
-  position: relative;
-  margin: 0 15px;
+.main-menu details {
+  margin: 8px 0;
 }
 
-.main-menu ul li a {
-  color: #ffffff;
-  text-decoration: none;
+.main-menu summary {
+  cursor: pointer;
+  padding: 10px;
+  background: #0055a5;
+  color: #fff;
   font-weight: bold;
-  padding: 10px 5px;
-  display: block;
+  border-radius: 4px;
 }
 
-.fat-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 500px;
-  background: #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 20px;
-  display: flex;
-}
-
-.main-menu ul li:hover .fat-menu {
-  display: flex;
-}
-
-.menu-column {
-  flex: 1;
-}
-
-.menu-column h4 {
-  margin-bottom: 10px;
-  color: #003366;
-  font-size: 1rem;
-}
-
-.menu-column ul {
+.main-menu .submenu {
   list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
 }
 
-.menu-column ul li {
-  margin-bottom: 8px;
+.main-menu .submenu li {
+  margin: 6px 0;
 }
 
-.menu-column ul li a {
+.main-menu .submenu li a {
   color: #0066cc;
   text-decoration: none;
+  font-size: 0.95rem;
 }
 
 .hero {
@@ -121,24 +95,15 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.featured-updates h2 {
-  margin-bottom: 20px;
-  color: #003366;
+.featured-updates ul {
+  list-style: none;
 }
 
-.updates-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.featured-updates ul li {
+  margin: 10px 0;
 }
 
-.update-item {
-  flex: 1;
-  min-width: 150px;
-  margin: 10px;
-}
-
-.update-item a {
+.featured-updates ul li a {
   color: #0066cc;
   text-decoration: none;
   font-weight: bold;
@@ -167,15 +132,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .main-menu ul {
-    flex-direction: column;
-  }
-  .fat-menu {
-    position: static;
-    width: 100%;
-    flex-direction: column;
-  }
   .search-bar input {
     width: 90%;
+  }
+  .featured-updates,
+  .action-buttons {
+    width: 90%;
+    margin: 20px auto;
   }
 }
