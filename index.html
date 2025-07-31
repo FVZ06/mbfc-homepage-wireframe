@@ -1,66 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MBFC Homepage</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="site-logo">MBFC</a>
-      <form class="search-bar" role="search">
-        <input type="search" aria-label="Search" placeholder="Search outlet, bias, or topic..." />
-        <button type="submit">Go</button>
-      </form>
-    </div>
+<header>
+  <input type="text" placeholder="Search biases..." class="search-bar">
+</header>
 
-    <nav class="site-nav" aria-label="Main Navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Ratings</a></li>
-        <li><a href="#">Educators</a></li>
-        <li><a href="#">Charts</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-  </header>
+<main>
+  <section class="bias-grid">
+    <button class="bias-btn">Left Bias</button>
+    <button class="bias-btn">Center</button>
+    <button class="bias-btn">Right Bias</button>
+  </section>
 
-  <main class="site-content">
-    <section class="bias-section">
-      <h2>Browse by Bias</h2>
-      <div class="bias-grid">
-        <button class="bias-button" data-tooltip="Liberal-leaning editorial bias">Left</button>
-        <button class="bias-button" data-tooltip="Leans liberal with some neutrality">Left-Center</button>
-        <button class="bias-button" data-tooltip="Neutral or balanced editorial bias">Center</button>
-        <button class="bias-button" data-tooltip="Leans conservative with some neutrality">Right-Center</button>
-        <button class="bias-button" data-tooltip="Conservative editorial bias">Right</button>
-        <button class="bias-button" data-tooltip="Propagates conspiracies or misinformation">Conspiracy</button>
-        <button class="bias-button" data-tooltip="Satirical or parody content">Satire</button>
-        <button class="bias-button" data-tooltip="Supports evidence-based science">Pro-Science</button>
-        <button class="bias-button" data-tooltip="Low factual reporting or bias concerns">Questionable</button>
-      </div>
-    </section>
+  <section class="categories">
+    <h2>Browse by Category</h2>
+    <ul>
+      <li><a href="#">Politics</a></li>
+      <li><a href="#">Economy</a></li>
+      <li><a href="#">Culture</a></li>
+    </ul>
+  </section>
 
-    <section class="educator-tools">
-      <h2>Resources for Educators</h2>
-      <p>Printable charts, media literacy guides, and classroom resources to teach bias awareness.</p>
-      <a href="#" class="cta-button">Browse Resources →</a>
-    </section>
+  <section class="educators-tools">
+    <h2>For Educators & Analysts</h2>
+    <p>Downloadable guides, curriculum tools, and analytical frameworks.</p>
+    <a href="#" class="cta-btn">Explore Resources</a>
+  </section>
+</main>
 
-    <section class="recent-updates">
-      <h2>Recent Updates</h2>
-      <ul>
-        <li><a href="#">Fact Check: July 30 – Climate Policy Analysis</a></li>
-        <li><a href="#">New Addition: Liberty Voice – Bias Rated</a></li>
-      </ul>
-      <a href="#">See All Updates →</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 MBFC. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<footer>
+  <p>&copy; 2025 Bias Insights Project</p>
+</footer>
