@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Media Bias / Fact Check</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBFC Homepage Wireframe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header role="banner">
+
+  <header class="hero">
     <h1>Media Bias / Fact Check</h1>
     <p class="tagline">Know the Bias. Trust the Facts.</p>
+    <input type="text" class="search-bar" placeholder="Search media source..." />
   </header>
 
   <main>
-    <section class="search-section" aria-label="Search">
-      <input type="text" placeholder="Search by outlet, topic, or bias..." class="search-bar">
-    </section>
 
-    <section class="bias-navigation" aria-label="Bias Categories">
-      <h2 class="section-title">Browse by Bias</h2>
-      <div class="bias-grid">
+    <section class="bias-categories">
+      <h2>Browse by Bias</h2>
+      <div class="button-grid">
         <button>Left</button>
         <button>Left-Center</button>
         <button>Center</button>
         <button>Right-Center</button>
         <button>Right</button>
-        <button>Conspiracy</button>
-        <button>Satire</button>
         <button>Pro-Science</button>
         <button>Questionable</button>
+        <button>Conspiracy</button>
+        <button>Satire</button>
       </div>
     </section>
 
-    <section class="educator-tools" aria-label="Resources for Educators">
-      <h2 class="section-title">For Educators & Librarians</h2>
-      <p>Printable charts, classroom guides, and media literacy kits.</p>
-      <a href="#" class="cta-button">Browse Resources →</a>
+    <section class="educators">
+      <h2>For Educators & Librarians</h2>
+      <p>Classroom guides, charts, and media kits to promote media literacy.</p>
+      <a class="btn-primary" href="#">Browse Resources →</a>
     </section>
 
-    <section class="recent-updates" aria-label="Recent Updates">
-      <h2 class="section-title">Recent Updates</h2>
+    <section class="updates">
+      <h2>Recent Updates</h2>
       <ul>
-        <li><a href="#">New! Fact Check for July 30</a></li>
+        <li><a href="#">Fact Check – July 30</a></li>
         <li><a href="#">National Security Journal – Bias and Credibility</a></li>
       </ul>
-      <a href="#">See All News →</a>
+      <a href="#">See All →</a>
     </section>
+
   </main>
 
   <footer>
-    <a href="#">Donate</a> |
-    <a href="#">Privacy Policy</a> |
-    <a href="#">Contact</a>
+    <p>
+      <a href="#">Donate</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Contact</a>
+    </p>
   </footer>
+
 </body>
 </html>
