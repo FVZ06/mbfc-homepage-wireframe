@@ -1,26 +1,50 @@
+/* Reset default list styles */
+ul { margin: 0; padding: 0; list-style: none; }
+
 /* Top Navigation */
-.top-nav ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; background-color: #222; margin: 0; padding: 0.8rem; }
-.top-nav li { position: relative; margin: 0 1rem; }
+.top-nav ul { display: flex; flex-wrap: wrap; justify-content: center; background-color: #222; margin: 0; padding: 0.8rem; }
+.top-nav li { position: relative; margin: 0 1.2rem; }
 .top-nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 1rem; padding: 0.5rem 0; display: block; }
-.dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 0.5rem 0; min-width: 180px; }
+.dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 0.5rem 0; min-width: 180px; z-index: 10; }
 .dropdown:hover .dropdown-menu { display: block; }
 .dropdown-menu li { margin: 0; }
 .dropdown-menu a { color: #222; padding: 0.5rem 1rem; display: block; }
 
+/* Header & Search */
+header { text-align: center; padding: 2rem 1rem; background: #fff; }
+.main-title { font-size: 2.4rem; margin-bottom: 0.5rem; }
+.tagline { font-size: 1.25rem; margin-bottom: 1rem; color: #555; }
+.search-bar { display: block; margin: 0 auto; width: 90%; max-width: 560px; padding: 0.8rem; border: 2px solid #c40000; border-radius: 8px; font-size: 1rem; }
+
+/* Bias Section */
+.bias-section { background: #fff; margin: 2rem auto; padding: 2rem 1rem; max-width: 1100px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+.bias-section h2 { text-align: center; font-size: 1.5rem; margin-bottom: 1.5rem; }
+.bias-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+.bias-btn { background: #e60000; color: #fff; border: none; border-radius: 6px; padding: 0.6rem 1.2rem; font-weight: 600; cursor: pointer; }
+.bias-btn:hover { background: #c40000; }
+
+/* Resources, Support & API Sections */
+.resources-section, .support-section, .api-section { background: #f8fafb; margin: 2rem auto; padding: 2rem 1rem; max-width: 800px; border-radius: 8px; text-align: center; }
+.resources-section h2,
+.support-section h2,
+.api-section h2 { font-size: 1.4rem; margin-bottom: 1rem; }
+.cta-btn, .donate-btn, .subscribe-btn, .api-btn { display: inline-block; margin: 0.5rem; padding: 0.7rem 1.4rem; border: none; border-radius: 6px; font-weight: 600; color: #fff; text-decoration: none; }
+.cta-btn { background: #0077cc; }
+.donate-btn { background: #dc2626; }
+.subscribe-btn { background: #0077cc; }
+.api-btn { background: #222; }
+.cta-btn:hover, .donate-btn:hover, .subscribe-btn:hover, .api-btn:hover { opacity: 0.85; }
+
 /* Footer Sitemap */
+footer { background: #222; color: #fff; padding: 2rem 1rem; text-align: center; }
 .footer-section { display: inline-block; vertical-align: top; margin: 1rem 2rem; }
-.footer-section h4 { margin-bottom: 0.5rem; font-weight: 600; }
-.footer-section ul { list-style: none; padding: 0; margin: 0; }
-.footer-section li { margin: 0.3rem 0; }
-.footer-section a { color: #0066cc; text-decoration: none; font-size: 0.9rem; }
+.footer-section h4 { margin-bottom: 0.5rem; font-size: 1rem; }
+.footer-section a { color: #00bfff; text-decoration: none; display: block; margin: 0.3rem 0; }
 .footer-section a:hover { text-decoration: underline; }
 
-/* Support & API Button Styles */
-.support-section, .api-section { background: #f8fafb; padding: 32px 20px; margin: 32px auto; border-radius: 12px; max-width: 800px; text-align: center; }
-.donate-btn, .subscribe-btn, .api-btn { display: inline-block; margin: 0.5rem 0.5rem; padding: 12px 24px; border: none; border-radius: 6px; font-weight: bold; text-decoration: none; color: #fff; transition: background 0.2s; }
-.donate-btn { background: #dc2626; }
-.donate-btn:hover { background: #a82222; }
-.subscribe-btn { background: #0077cc; }
-.subscribe-btn:hover { background: #005fa3; }
-.api-btn { background: #222; }
-.api-btn:hover { background: #444; }
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .top-nav ul { flex-direction: column; }
+  .top-nav li { margin: 0.3rem 0; }
+  .bias-grid { gap: 0.5rem; }
+}
