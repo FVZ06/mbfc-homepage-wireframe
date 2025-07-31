@@ -3,39 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MBFC</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>MBFC Homepage Wireframe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="site-logo">MBFC</a>
-      <form class="search-bar" role="search">
-        <input type="search" aria-label="Search" placeholder="Search outlet, bias, or topic..." />
-        <button type="submit">Go</button>
-      </form>
-    </div>
 
-    <nav class="site-nav" aria-label="Main Navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Ratings</a></li>
-        <li><a href="#">Educator Tools</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
+  <header class="hero">
+    <h1>Media Bias / Fact Check</h1>
+    <p class="tagline">Know the Bias. Trust the Facts.</p>
+    <input type="text" class="search-bar" placeholder="Search media source..." />
   </header>
 
-  <main class="site-content">
-    <section>
-      <h1>Welcome to MBFC</h1>
-      <p>Your trusted source for media bias ratings and news literacy tools.</p>
+  <main>
+
+    <section class="bias-categories">
+      <h2>Browse by Bias</h2>
+      <div class="button-grid">
+        <button>Left</button>
+        <button>Left-Center</button>
+        <button>Center</button>
+        <button>Right-Center</button>
+        <button>Right</button>
+        <button>Pro-Science</button>
+        <button>Questionable</button>
+        <button>Conspiracy</button>
+        <button>Satire</button>
+      </div>
     </section>
+
+    <section class="educators">
+      <h2>For Educators & Librarians</h2>
+      <p>Classroom guides, charts, and media kits to promote media literacy.</p>
+      <a class="btn-primary" href="#">Browse Resources →</a>
+    </section>
+
+    <section class="updates">
+      <h2>Recent Updates</h2>
+      <ul>
+        <li><a href="#">Fact Check – July 30</a></li>
+        <li><a href="#">National Security Journal – Bias and Credibility</a></li>
+      </ul>
+      <a href="#">See All →</a>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 MBFC. All rights reserved.</p>
+  <footer>
+    <p>
+      <a href="#">Donate</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Contact</a>
+    </p>
   </footer>
+
 </body>
 </html>
