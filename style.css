@@ -1,58 +1,79 @@
-<!-- style.css (Updated) -->
+/* style.css */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial, sans-serif; background: #f5f7fa; color: #333; text-align: center; }
-header { background: #003366; padding: 10px 20px; position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; }
-.logo a { color: #fff; font-size: 1.5rem; text-decoration: none; }
-.main-menu { position: relative; }
-.hamburger { background: transparent; border: none; color: #fff; font-size: 1.5rem; display: none; }
-.nav-list { display: flex; list-style: none; }
-.nav-list li { margin: 0 15px; }
-.nav-list li a { color: #fff; text-decoration: none; font-weight: bold; }
-.hero { background: #fafafa; padding: 40px 20px; }
-.search-bar input { width: 80%; max-width: 600px; padding: 12px; font-size: 1rem; border: 2px solid #ccc; border-radius: 8px; }
-.featured-updates { background: #fff; padding: 30px; margin: 20px auto; width: 90%; max-width: 800px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-.featured-updates ul { list-style: none; display: flex; justify-content: space-around; }
-.featured-updates ul li a { color: #0066cc; text-decoration: none; font-weight: bold; }
-.action-buttons { margin: 30px 0; }
-.action-buttons button { padding: 10px 20px; margin: 0 10px; background-color: #0066cc; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
-footer { background: #e6ecf3; padding: 15px 0; font-size: 0.9rem; }
-
-@media (max-width: 768px) {
-  .hamburger { display: block; }
-  .nav-list { display: none; flex-direction: column; background: #003366; position: absolute; top: 100%; left: 0; width: 100%; }
-  .nav-list li { margin: 10px 0; }
-  .featured-updates ul { flex-direction: column; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  text-align: center;
+  line-height: 1.4;
 }
 
-/* ---------- Wireframe Version ---------- */
+.site-header {
+  background: #fff;
+  padding: 60px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
 
-<!-- wireframe.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wireframe - MBFC</title>
-  <link rel="stylesheet" href="wireframe.css">
-</head>
-<body>
-  <header class="wf-header">Logo | ☰ Menu</header>
-  <section class="wf-hero">[Hero Image/Title Placeholder]</section>
-  <section class="wf-search">[Search Bar Placeholder]</section>
-  <section class="wf-nav">[Accordion/Menu Placeholder]</section>
-  <section class="wf-featured">[Featured Updates Placeholder]</section>
-  <section class="wf-actions">[Buttons Placeholder]</section>
-  <footer class="wf-footer">© MBFC</footer>
-</body>
-</html>
+.site-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-/* wireframe.css */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial, sans-serif; }
-header.wf-header { height: 60px; background: #ccc; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; }
-section.wf-hero { height: 200px; background: #eee; margin: 20px; }
-section.wf-search { height: 60px; background: #ddd; margin: 20px; }
-section.wf-nav { height: 150px; background: #eee; margin: 20px; }
-section.wf-featured { height: 120px; background: #ddd; margin: 20px; }
-section.wf-actions { height: 80px; background: #eee; margin: 20px; }
-footer.wf-footer { height: 40px; background: #ccc; display: flex; align-items: center; justify-content: center; }
+.tagline {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 50%;
+  max-width: 500px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #d52676;
+  border-radius: 4px;
+}
+
+.browse-bias {
+  padding: 40px 20px;
+}
+
+.browse-bias h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.bias-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.bias-list li a {
+  display: block;
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.site-footer {
+  background: #fff;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 600px) {
+  .search-bar input { width: 90%; }
+  .browse-bias h2 { font-size: 1.25rem; }
+  .bias-list { gap: 10px; }
+  .bias-list li a { padding: 8px 16px; font-size: 0.9rem; }
+}
